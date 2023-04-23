@@ -1,0 +1,85 @@
+.logo{
+    margin-left: 50px;
+    line-height: 80px;
+    font-size: 30px;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+nav{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: white;
+     
+}
+nav ul{
+    float: right;
+    margin-right: 100px;
+}   
+nav ul li{
+    display: inline-block;
+    line-height: 75px;
+    margin: 0 20px;
+}
+nav ul li a{
+    color: black;
+    font-size: 15px;
+    border-radius: 4px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+    z-index: 1;
+}
+a.active:hover{
+    background: rgb(56, 93, 161);
+    transition: .10s;
+    z-index: 1;
+}
+
+header{
+    color: black;
+}
+.Section_top{
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+    background: url("keyboard.jpg");
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    justify-content: center;
+    animation: change 10s infinite ease-in-out;
+}
+.content{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+.content h1{
+    color: white;
+    font-size: 60px;
+    letter-spacing: 15px;
+}
+.content h1 span{
+    color: lemonchiffon;
+}
+@keyframes change   {
+    0%
+    {
+      background-image: url(blog.jpg);
+    }
+    20%
+    {
+        background-image: url(keyboard.jpg);
+    }
+    40%
+    {
+        background-image: url(blog1.jpg);
+    }
+}

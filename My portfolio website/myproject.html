@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="myproject.css">
+    </head>
+    <body>
+<header>
+    <nav>
+        <label class="logo">PERSONAL BLOG</label>
+        <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a class="active" href="home.html">Resume</a></li>
+        <li><a class="active" href="about.html">About me</a></li>
+        <li><a class="active" href="contactme.html">Contact me</a></li>
+        </ul>
+        </nav>
+</header> 
+<h2>Web app</h2>
+<div class="container">
+    <selection class="about">
+        <div class="about-image">
+        <img src="./images/vote.jpg">
+        <div class="info">
+            <a class="link" href="https://github.com/VasanthBVash">Project Link</a>
+        </div>
+    </div>
+    <div class="about-content">
+        <h2>E-Voting</h2>
+        <p>Online Voting poll both website designed for avoid the crowd in voting poll booth 
+            and vote through the internet used Frontend angular node js and the datas are connected with 
+            firebase API. people can register and create a account to login for voting.The project is 
+            available in my Github click the image to visit.
+        </p>
+   </div>
+</selection>
+</div>
+<h4>Innosense</h4>
+<div class="container1">
+    <selection class="about1">
+        <div class="about-image1">
+        <img src="" id="image">
+    </div>
+    <div class="about-content1">
+        <h2>Fingerprint-Doorlock System</h2>
+        <p>Fingerprint Door locker we used the concepts of IoT and components Arduino, Fingerprint sensor,
+            Relay module,Soleniod lock. Fingerprint reader scanning is the most mature and tested type of bio 
+            metric technology. 
+        </p>
+   </div>
+</selection>
+</div>
+<h2>Full stack</h2>
+<div class="container2">
+    <selection class="about2">
+        <div class="about-image2">
+        <img src="./images/healthcare1.jpg">
+    </div>
+    <div class="about-content2">
+        <h2>Health care management system</h2>
+        <p>Health care management - Created to
+            ensure the health of the people like
+            involved planning, directing, and
+            coordinating non nonclinical activities,
+            technologies used Java, MySQL.
+        </p>
+   </div>
+</selection>
+</div>
+<script type="text/javascript">
+     let image = document.getElementById('image');
+     let images = ['print.avif','fingerprint.jpg']
+     setInterval(function(){
+        let random = Math.floor(Math.random() * 2);
+        image.src = images[random];
+     },800)
+
+</script>
+</body>
+</html>
